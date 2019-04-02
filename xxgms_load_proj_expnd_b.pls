@@ -24,14 +24,7 @@ PROCEDURE load_data (
                 , p_expenditure_item_date       IN      DATE     --not null
 		, p_organization_name		IN	VARCHAR2 --not null
                 , p_expenditure_type            IN      VARCHAR2 --not null
---		, p_person_business_group_name	IN	VARCHAR2 DEFAULT NULL 
---		, p_employee_number		IN	VARCHAR2 DEFAULT NULL 
 		, p_quantity			IN	NUMBER   -- not null
---                , p_raw_cost                    IN      NUMBER   DEFAULT NULL
---                , p_denom_raw_cost              IN      NUMBER   DEFAULT NULL
---		, p_denom_burdened_cost		IN	NUMBER	 DEFAULT NULL
---        	, p_acct_raw_cost               IN      NUMBER   DEFAULT NULL
---		, p_raw_cost_rate               IN      NUMBER   DEFAULT NULL
 		, p_orig_transaction_reference  IN	VARCHAR2 DEFAULT NULL
 		, p_expenditure_comment         IN      VARCHAR2 DEFAULT NULL
 		, p_dcid			IN	NUMBER	 DEFAULT NULL
@@ -47,9 +40,6 @@ PROCEDURE load_data (
                 , p_attribute8                  IN      VARCHAR2 DEFAULT NULL
                 , p_attribute9                  IN      VARCHAR2 DEFAULT NULL
                 , p_attribute10                 IN      VARCHAR2 DEFAULT NULL
---                , p_unmatched_negative_txn_flag IN      VARCHAR2 DEFAULT NULL
---                , p_non_labor_resource          IN      VARCHAR2 DEFAULT NULL
---                , p_non_labor_resource_org_name IN      VARCHAR2 DEFAULT NULL
 		) IS 
 
     l_org_id	NUMBER;
